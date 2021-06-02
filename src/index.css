@@ -1,13 +1,128 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #222324;
+    color: #ffffff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.nav-link a {
+    font-size: 0.7rem;
+    font-family: raleway, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.timerButton {
+    background-color: #222324;
+    color: #92b3d2;
+    cursor: pointer;
+    box-shadow: #ffffff;
+    transition: all 300ms ease 0s;
+    font-family: raleway, sans-serif;
+    text-transform: uppercase;
+    border: 2px outset #ffffff;
+    margin: auto 0.3rem;
+}
+
+.col {
+    text-align: center;
+}
+
+.soft-skill__icon {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+.soft-skill__text {
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+.carousel {
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-indicators li {
+    background-color: #92b3d2;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23232527' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23232527' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222324;
+}
+
+.in-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+
+hr {
+    background-color: #222324;
+    width: 50%;
+}
+
+h5 {
+    color: #92b3d2;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.profile {
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.banner {
+    background-color: #92b3d2;
+}
+
+.summary {
+    margin: 2rem auto;
+    justify-content: center;
 }
