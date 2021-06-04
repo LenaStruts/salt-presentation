@@ -35,10 +35,15 @@ code {
     text-align: right;
 }
 
+.navbar-brand a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .nav-link a {
     font-size: 0.7rem;
     font-family: raleway, sans-serif;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -56,6 +61,15 @@ code {
     text-transform: uppercase;
     border: 2px outset #ffffff;
     margin: auto 0.3rem;
+}
+
+.projectButton {
+    margin: 1rem auto;
+}
+
+.projectButton a {
+    color: #92b3d2;
+    text-decoration: none;
 }
 
 .col {
@@ -82,7 +96,7 @@ code {
 }
 
 .carousel {
-    width: 75%;
+    width: 71%;
     margin: auto;
 }
 
@@ -149,15 +163,6 @@ h5 {
     margin: 0.7rem 0;
 }
 
-
-/* ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4rem 0;
-} */
-
 .hero {
     display: flex;
     justify-content: center;
@@ -170,9 +175,9 @@ h5 {
 }
 
 .summary {
-    margin: 2rem auto;
+    margin: 1rem auto;
     justify-content: center;
-    animation: fadeInLeft 3s;
+    animation: fadeInLeft 1s;
 }
 
 @keyframes fadeInLeft {
@@ -262,4 +267,8 @@ h5 {
         height: 18.75rem;
         margin: 1rem auto;
     }
+}
+
+.not-show {
+    display: none;
 }

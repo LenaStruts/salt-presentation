@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react"
 import Summary from './Summary/Summary'
 import Coding from './Coding/Coding'
 import Motivation from './Motivation/Motivation'
-import { Container, Row, Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 
 import {
     BrowserRouter as Router,
     Switch, Route, Link
 } from "react-router-dom"
-  
 
 const Timer = () => {
-  const [second, setSecond] = useState("00")
-  const [minute, setMinute] = useState("01")
+  const [second, setSecond] = useState("30")
+  const [minute, setMinute] = useState("04")
+  const [isDone, setIsDone] = useState(false)
   const [isActive, setIsActive] = useState(false)
-  const [counter, setCounter] = useState(60)
+  const [counter, setCounter] = useState(270)
 
   useEffect(() => {
     let intervalId
@@ -46,12 +46,13 @@ const Timer = () => {
 
   function stopTimer() {
     setIsActive(false)
-    setCounter(60)
-    setSecond("00")
-    setMinute("01")
+    setIsDone(false)
+    setCounter(270)
+    setSecond("30")
+    setMinute("04")
   }
 
-  if (counter === 0) {
+  if (isDone === true) {
       return (
       <>
         <div class="time">
@@ -70,8 +71,8 @@ const Timer = () => {
   return (
     <>
     <Router>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#">Lena Struts</Navbar.Brand>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+        <Navbar.Brand href="#"><Link to="/">Lena Struts</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -93,8 +94,11 @@ const Timer = () => {
                 </div>
             </Navbar.Text>
             <div>
-                <button onClick={() => setIsActive(!isActive)} className="timerButton">
+                <button onClick={() => setIsActive(!isActive)} className={!(counter===0) ? "timerButton" : "not-show"}>
                 {isActive ? "Pause" : "Start"}
+                </button>
+                <button onClick={() => setIsDone(!isDone)} className={(counter===0) ? "timerButton" : "not-show"}>
+                Done
                 </button>
                 <button onClick={stopTimer} className="timerButton">
                 Reset
@@ -111,6 +115,9 @@ const Timer = () => {
             </Route>
             <Route path="/motivation_goal">
                 <Motivation />
+            </Route>
+            <Route path="/">
+              <Summary />
             </Route>
         </Switch>    
     </Router>

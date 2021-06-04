@@ -6,14 +6,14 @@ const Summary = () => {
     return (
         <Container fluid>
             <Row className="hero">
-                <Col xs={12} md={5}>
+                <Col xs={12} md={6}>
                     <Row className="banner">
-                    <Col xs={4} md={5}>
+                    <Col xs={4} md={4}>
                         <img className="profile" src={profile} width="100%" />
                     </Col>
-                    <Col xs={8} md={7}>
+                    <Col xs={8} md={8}>
                         <ul className="about">
-                            <li>web-developer</li>
+                            <li>an aspiring web-developer</li>
                             <li>diversity and inclussion advocate</li>
                             <li>sports and cooking enthusiast</li>
                         </ul>
