@@ -5,38 +5,42 @@ import profile from './lena.jpg'
 const Summary = () => {
     return (
         <Container fluid>
-            <Row className="banner">
-                <Col>
-                    <img className="profile" src={profile} width="30%" />
-                </Col>
-                <Col>
-                    <ul>
-                        <li>web-developer</li>
-                        <li>diversity and inclussion advocate</li>
-                        <li>sports enthusiast</li>
-                    </ul>
+            <Row className="hero">
+                <Col xs={12} md={5}>
+                    <Row className="banner">
+                    <Col xs={4} md={5}>
+                        <img className="profile" src={profile} width="100%" />
+                    </Col>
+                    <Col xs={8} md={7}>
+                        <ul className="about">
+                            <li>web-developer</li>
+                            <li>diversity and inclussion advocate</li>
+                            <li>sports and cooking enthusiast</li>
+                        </ul>
+                    </Col>
+                    </Row>
                 </Col>
             </Row>
             <Row className="summary">
                 <div className="circle">
                     <div className="in-circle">
-                        <h5>BI / Kyiv-Mohyla Academy</h5>
+                        <h5>BI / NaUKMA</h5>
                         <hr></hr>
-                        <p>Finance, marketing, logistics</p>
+                        <p className="circle-bottom">MSc in Business / Bachelor in Finance</p>
                     </div>
                 </div>
                 <div xs lg="3" className="circle">
                     <div className="in-circle">
                         <h5>Schneider Electric / Builton</h5>
                         <hr></hr>
-                        <p>Event management, marketing communication, data analysis</p>
+                        <p className="circle-bottom">Event management, marketing communication, data analysis</p>
                     </div>
                 </div>
                 <div xs lg="3" className="circle">
                     <div className="in-circle">
                         <h5>HerSpace</h5>
                         <hr></hr>
-                        <p>Wordpress, Elementor, Figma</p>
+                        <p className="circle-bottom">Wordpress, Elementor, Figma</p>
                     </div>
                 </div>
             </Row>

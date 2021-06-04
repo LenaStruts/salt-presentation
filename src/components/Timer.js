@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
-import Summary from './Summary'
-import Coding from './Coding'
+import Summary from './Summary/Summary'
+import Coding from './Coding/Coding'
+import Motivation from './Motivation/Motivation'
 import { Container, Row, Navbar, Nav } from 'react-bootstrap'
 
 
@@ -36,7 +37,7 @@ const Timer = () => {
         setSecond(computedSecond)
         setMinute(computedMinute)
 
-        counter > 0 ? setCounter((counter) => counter - 1) : stopTimer()
+        counter > 0 ? setCounter((counter) => counter - 1) : setCounter(0)
       }, 1000)
     }
 
@@ -47,7 +48,7 @@ const Timer = () => {
     setIsActive(false)
     setCounter(60)
     setSecond("00")
-    setMinute("05")
+    setMinute("01")
   }
 
   if (counter === 0) {
@@ -57,8 +58,13 @@ const Timer = () => {
             <span class="minute">{minute}</span>
             <span>:</span>
             <span class="second">{second}</span>
+          <button onClick={stopTimer} className="timerButton">
+            Reset
+          </button>
         </div>
-        <h1>Thanks for your attention!!!</h1>
+        <div className="thanks-box">
+          <h1 className="thanks">Thanks for your attention!!!</h1>
+        </div>
       </>
       )}
   return (
@@ -76,10 +82,7 @@ const Timer = () => {
                 <Link to="/coding">coding</Link>
               </Nav.Link>
               <Nav.Link href="#" as="span">
-                <Link to="/motivation">motivation</Link>
-              </Nav.Link>
-              <Nav.Link href="#" as="span">
-                <Link to="/future">future</Link>
+                <Link to="/motivation_goal">motivation and goal</Link>
               </Nav.Link>
             </Nav>
             <Navbar.Text>
@@ -106,14 +109,10 @@ const Timer = () => {
             <Route path="/coding">
                 <Coding />
             </Route>
-            <Route path="/motivation">
-            Motivation
+            <Route path="/motivation_goal">
+                <Motivation />
             </Route>
-            <Route path="/future">
-            Future
-            </Route>
-        </Switch>
-        
+        </Switch>    
     </Router>
     </>
   )

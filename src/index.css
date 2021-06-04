@@ -11,6 +11,30 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.thanks-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.thanks {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10rem;
+}
+
+.time {
+    margin: 0.3rem;
+    text-align: right;
+}
+
 .nav-link a {
     font-size: 0.7rem;
     font-family: raleway, sans-serif;
@@ -21,7 +45,8 @@ code {
     white-space: nowrap;
 }
 
-.timerButton {
+.timerButton,
+.projectButton {
     background-color: #222324;
     color: #92b3d2;
     cursor: pointer;
@@ -47,16 +72,17 @@ code {
     text-align: center;
 }
 
-h3 {
+.skill__header {
     color: #ffffff;
     font-family: futura-pt, sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     text-align: center;
+    margin: 2rem auto;
 }
 
 .carousel {
-    width: 70%;
+    width: 75%;
     margin: auto;
 }
 
@@ -73,8 +99,8 @@ h3 {
 }
 
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 23.125rem;
+    height: 23.125rem;
     background: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -107,15 +133,36 @@ h5 {
 
 .profile {
     border-radius: 50%;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
-ul {
+.about {
+    margin: 4rem 0;
+    font-family: futura-pt, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+.about li {
+    margin: 0.7rem 0;
+}
+
+
+/* ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 4rem 0;
+} */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .banner {
@@ -125,4 +172,94 @@ ul {
 .summary {
     margin: 2rem auto;
     justify-content: center;
+    animation: fadeInLeft 3s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.circle-bottom {
+    font-family: futura-pt, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.motiv-goal {
+    margin: 2rem 0;
+    animation: appear 3s;
+}
+
+.project {
+    text-align: center;
+}
+
+.motiv-header {
+    color: #92b3d2;
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@media all and (max-width: 1025px) {
+    .about {
+        margin: 1rem 0;
+    }
+    .thanks {
+        font-size: 3rem;
+        flex-grow: 5;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .carousel {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .circle {
+        width: 18.75rem;
+        height: 18.75rem;
+        margin: 1rem auto;
+    }
 }
