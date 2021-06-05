@@ -180,26 +180,6 @@ h5 {
     animation: fadeInLeft 1s;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .circle-bottom {
     font-family: futura-pt, sans-serif;
     font-weight: 800;
@@ -244,6 +224,30 @@ h5 {
     position: absolute;
 }
 
+.not-show {
+    display: none;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media all and (max-width: 1025px) {
     .about {
         margin: 1rem 0;
@@ -259,16 +263,23 @@ h5 {
         width: 100%;
         margin: auto;
     }
-}
-
-@media all and (max-width: 576px) {
     .circle {
         width: 18.75rem;
         height: 18.75rem;
         margin: 1rem auto;
     }
-}
-
-.not-show {
-    display: none;
+    .projects {
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img-top {
+        margin: 1rem 0;
+    }
+    .points {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }

@@ -8,7 +8,7 @@ const Motivation = () => {
             <Container>
                 <Row className="motiv-goal">
                     <Col xs={12} md={3}>
-                        <img src={mhamilton} width="100%"/>
+                        <img className="img-top" src={mhamilton} width="100%"/>
                     </Col>
                     <Col xs={12} md={9}>
                         <h3 className="motiv-header">I believe I am a suitable candidate for Salt because I ...</h3>

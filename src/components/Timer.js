@@ -72,7 +72,7 @@ const Timer = () => {
     <>
     <Router>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-        <Navbar.Brand href="#"><Link to="/">Lena Struts</Link></Navbar.Brand>
+        <Navbar.Brand href="#"><Link to="/salt-presentation/">Lena Struts</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -116,7 +116,7 @@ const Timer = () => {
             <Route path="/motivation_goal">
                 <Motivation />
             </Route>
-            <Route path="/">
+            <Route path="/salt-presentation/">
               <Summary />
             </Route>
         </Switch>    

@@ -78,7 +78,7 @@ const Coding = () => {
                     </div>
                 </Row>
             <h3 className="skill__header">Projects</h3>
-                <Row>
+                <Row className="projects">
                     <Col xs={11} md={6}>
                         <div className="project">
                         <h5>Recipes</h5>
