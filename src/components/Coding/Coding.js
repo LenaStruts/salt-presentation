@@ -78,24 +78,24 @@ const Coding = () => {
                     </div>
                 </Row>
             <h3 className="skill__header">Projects</h3>
-                <Row className="projects">
-                    <Col xs={11} md={6}>
-                        <div className="project">
-                        <h5>Recipes</h5>
-                        <p>Final project for HarvardX, fullstack web-app made using Django and JavaScript</p>
-                        <YoutubeEmbed embedId="UUD2t2YyDFU" />
-                        <button className="projectButton"><a href="https://github.com/LenaStruts/delicious-recipes" target="_blank">View project</a></button>
-                        </div>
-                    </Col>
-                    <Col classname="project" xs={11} md={6}>
-                        <div className="project">
-                        <h5>Jamming</h5>
-                        <p>Project for Codecademy, web-app made using React and Spotify API</p>
-                        <YoutubeEmbed embedId="qMlBM87bFmA" />
-                        <button className="projectButton"><a href="https://github.com/LenaStruts/jamming" target="_blank">View project</a></button>
-                        </div>
-                    </Col>
-                </Row>
+            <Row className="projects">
+                <Col xs={11} md={6}>
+                    <div className="project">
+                    <h5>Recipes</h5>
+                    <p>Final project for HarvardX, fullstack web-app made using Django and JavaScript</p>
+                    <YoutubeEmbed embedId="UUD2t2YyDFU" />
+                    <button className="projectButton"><a href="https://github.com/LenaStruts/delicious-recipes" target="_blank">View project</a></button>
+                    </div>
+                </Col>
+                <Col classname="project" xs={11} md={6}>
+                    <div className="project">
+                    <h5>Jamming</h5>
+                    <p>Project for Codecademy, web-app made using React and Spotify API</p>
+                    <YoutubeEmbed embedId="qMlBM87bFmA" />
+                    <button className="projectButton"><a href="https://github.com/LenaStruts/jamming" target="_blank">View project</a></button>
+                    </div>
+                </Col>
+            </Row>
         </Container>
     )
 }

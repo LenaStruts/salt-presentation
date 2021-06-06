@@ -7,7 +7,7 @@ const ControlledCarousel = () => {
     const [index, setIndex] = useState(0)
 
     const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
+        setIndex(selectedIndex)
     }
     return (
         <Carousel fade activeIndex={index} onSelect={handleSelect}>
