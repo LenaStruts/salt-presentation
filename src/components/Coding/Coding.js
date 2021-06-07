@@ -52,7 +52,7 @@ const Coding = () => {
                 </Col>
                 <Col>
                     <i class="soft-skill__icon fas fa-database"></i>
-                    <p class="soft-skill__text">Postgres / MongoDB</p>
+                    <p class="soft-skill__text">PostgreSQL / MongoDB</p>
                 </Col>
                 <Col>
                     <i class="soft-skill__icon fab fa-git-alt"></i>
